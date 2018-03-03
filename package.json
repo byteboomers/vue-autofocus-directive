@@ -1,0 +1,27 @@
+{
+  "name": "vue-autofocus-directive",
+  "description": "Vue autofocus directive",
+  "version": "0.0.0",
+  "main": "dist/vue-autofocus.js",
+  "scripts": {
+    "build": "webpack --mode production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Botre/vue-autofocus-directive.git"
+  },
+  "keywords": [
+    "vue",
+    "autofocus"
+  ],
+  "author": "Bjorn Krols",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
+}

@@ -1,0 +1,45 @@
+# vue-autofocus-directive
+
+> Autofocus directive for Vue
+
+## About
+
+Lifted from the official Vue tutorial: https://vuejs.org/v2/guide/custom-directive.html
+
+When the page loads, the element with the directive gains focus (note: autofocus doesn’t work on mobile Safari).
+
+## Installation
+
+```bash
+npm install --save vue-autofocus-directive
+```
+
+[npm package link](https://www.npmjs.com/package/vue-autofocus-directive)
+
+```javascript
+import Vue from 'vue';
+import autofocus from 'vue-autofocus-directive';
+Vue.directive('autofocus', autofocus);
+```
+
+## Example
+
+```vue
+<template>
+  <form>
+    <div>
+        <label>Email</label>
+        <input v-focus v-model="email"  type="email" name="email" placeholder="Email">
+    </div>
+  </form>
+</template>
+```
+
+## Powered by
+
+* Babel
+* Webpack 4
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
