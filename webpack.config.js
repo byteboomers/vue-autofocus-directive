@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname + '/src/vue-autofocus.js'),
+  entry: path.resolve(__dirname + '/src/vue-autofocus-directive.js'),
   output: {
     path: path.resolve(__dirname + '/dist/'),
     filename: 'vue-autofocus-directive.js',

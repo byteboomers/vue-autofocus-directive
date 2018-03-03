@@ -2,7 +2,7 @@
   "name": "vue-autofocus-directive",
   "description": "Vue autofocus directive",
   "version": "0.0.0",
-  "main": "dist/vue-autofocus.js",
+  "main": "dist/vue-autofocus-directive.js",
   "scripts": {
     "build": "webpack --mode production --progress"
   },
