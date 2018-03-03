@@ -29,7 +29,7 @@ Vue.directive('autofocus', autofocus);
   <form>
     <div>
         <label>Email</label>
-        <input v-focus v-model="email"  type="email" name="email" placeholder="Email">
+        <input v-autofocus v-model="email"  type="email" name="email" placeholder="Email">
     </div>
   </form>
 </template>
