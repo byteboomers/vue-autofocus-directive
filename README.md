@@ -2,6 +2,9 @@
 
 > Autofocus directive for Vue
 
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/KrolsBjorn)
+
+## Abou
 ## About
 
 Lifted from the official Vue tutorial: https://vuejs.org/v2/guide/custom-directive.html
