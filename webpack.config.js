@@ -1,13 +1,13 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
-  entry: path.resolve(__dirname + '/src/vue-autofocus-directive.js'),
+  entry: path.resolve(__dirname + "/src/vue-autofocus-directive.js"),
   output: {
-    path: path.resolve(__dirname + '/dist/'),
-    filename: 'vue-autofocus-directive.js',
-    library: 'vue-autofocus-directive',
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname + "/dist/"),
+    filename: "vue-autofocus-directive.js",
+    library: "vue-autofocus-directive",
+    libraryTarget: "umd",
     umdNamedDefine: true,
     globalObject: "typeof self !== 'undefined' ? self : this"
   },
@@ -17,7 +17,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: "babel-loader"
         }
       }
     ]
