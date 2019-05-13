@@ -16,11 +16,23 @@ npm install --save vue-autofocus-directive
 
 [npm package link](https://www.npmjs.com/package/vue-autofocus-directive)
 
+## Usage
+
 ```javascript
 import Vue from 'vue';
 import autofocus from 'vue-autofocus-directive';
 Vue.directive('autofocus', autofocus);
 ```
+
+```html
+<input v-autofocus>
+```
+
+## Options
+### `byAttribute`
+Type: `modifiers`  
+Default: `undefined`  
+Description: *Required when using dynamic attribute `autofocus`*
 
 ## Example
 
@@ -28,7 +40,30 @@ Vue.directive('autofocus', autofocus);
 <template>
   <form>
     <label>Email</label>
-    <input v-autofocus v-model="email"  type="email" name="email" placeholder="Email">
+    <input 
+    	v-autofocus 
+    	v-model="email"  
+    	type="email" 
+    	name="email" 
+    	placeholder="Email"
+    >
+  </form>
+</template>
+```
+or
+
+```vue
+<template>
+  <form>
+    <label>Email</label>
+    <input 
+    	v-autofocus.byAttribute 
+    	:autofocus="autofocus" 
+    	v-model="email"  
+    	type="email" 
+    	name="email" 
+    	placeholder="Email"
+    >
   </form>
 </template>
 ```
