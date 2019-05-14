@@ -30,11 +30,11 @@ Vue.directive("autofocus", autofocus);
 
 ## Options
 
-### `binding`
+### `binding`  
 
-Type: `value`
-Default: `undefined`
-Description: _Required when using dynamic value_
+Type: `value`  
+Default: `undefined`  
+Description: _Required when using dynamic value_  
 
 ## Example
 
