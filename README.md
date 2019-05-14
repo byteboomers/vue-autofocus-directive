@@ -29,10 +29,10 @@ Vue.directive('autofocus', autofocus);
 ```
 
 ## Options
-### `byAttribute`
-Type: `modifiers`  
+### `binding`
+Type: `value`  
 Default: `undefined`  
-Description: *Required when using dynamic attribute `autofocus`*
+Description: *Required when using dynamic value*
 
 ## Example
 
@@ -57,8 +57,7 @@ or
   <form>
     <label>Email</label>
     <input 
-    	v-autofocus.byAttribute 
-    	:autofocus="autofocus" 
+    	v-autofocus="dynamicValue"
     	v-model="email"  
     	type="email" 
     	name="email" 
@@ -66,6 +65,16 @@ or
     >
   </form>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            dynamicValue: false
+        };
+    }
+}
+</script>
 ```
 
 ## Powered by
