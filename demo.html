@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <div id="app">
+      <input v-autofocus="isDesktop" type="text" />
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="./dist/vue-autofocus-directive.js"></script>
+    <script>
+      Vue.directive("autofocus", window["vue-autofocus-directive"].default);
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            isDesktop: true
+          };
+        }
+      });
+    </script>
+  </body>
+</html>
