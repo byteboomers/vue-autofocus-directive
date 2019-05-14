@@ -2,11 +2,10 @@
 const directive = {
   // When the bound element is inserted into the DOM...
   inserted(el, binding) {
-    // If directive has value
+    // If directive has bound value
     if (binding.value !== undefined && !binding.value) {
       return;
     }
-
     // Focus the element
     el.focus();
   }
