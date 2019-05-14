@@ -1,4 +1,4 @@
-# vue-autofocus-directive 
+# vue-autofocus-directive
 
 > Autofocus directive for Vue
 
@@ -19,20 +19,22 @@ npm install --save vue-autofocus-directive
 ## Usage
 
 ```javascript
-import Vue from 'vue';
-import autofocus from 'vue-autofocus-directive';
-Vue.directive('autofocus', autofocus);
+import Vue from "vue";
+import autofocus from "vue-autofocus-directive";
+Vue.directive("autofocus", autofocus);
 ```
 
 ```html
-<input v-autofocus>
+<input v-autofocus />
 ```
 
 ## Options
+
 ### `binding`
-Type: `value`  
-Default: `undefined`  
-Description: *Required when using dynamic value*
+
+Type: `value`
+Default: `undefined`
+Description: _Required when using dynamic value_
 
 ## Example
 
@@ -40,47 +42,48 @@ Description: *Required when using dynamic value*
 <template>
   <form>
     <label>Email</label>
-    <input 
-    	v-autofocus 
-    	v-model="email"  
-    	type="email" 
-    	name="email" 
-    	placeholder="Email"
-    >
+    <input
+      v-autofocus
+      v-model="email"
+      type="email"
+      name="email"
+      placeholder="Email"
+    />
   </form>
 </template>
 ```
+
 or
 
 ```vue
 <template>
   <form>
     <label>Email</label>
-    <input 
-    	v-autofocus="dynamicValue"
-    	v-model="email"  
-    	type="email" 
-    	name="email" 
-    	placeholder="Email"
-    >
+    <input
+      v-autofocus="dynamicValue"
+      v-model="email"
+      type="email"
+      name="email"
+      placeholder="Email"
+    />
   </form>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            dynamicValue: false
-        };
-    }
-}
+  data() {
+    return {
+      dynamicValue: false
+    };
+  }
+};
 </script>
 ```
 
 ## Powered by
 
-* Babel 7
-* Webpack 4
+- Babel 7
+- Webpack 4
 
 ## License
 
