@@ -1,21 +1,28 @@
 {
   "name": "vue-autofocus-directive",
-  "description": "Vue autofocus directive",
   "version": "1.0.2",
-  "main": "dist/vue-autofocus-directive.js",
-  "scripts": {
-    "build": "webpack --mode production --progress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Botre/vue-autofocus-directive.git"
-  },
+  "description": "Vue autofocus directive",
+  "author": "Bjorn Krols (https://byteboomers.com)",
+  "license": "MIT",
   "keywords": [
     "vue",
     "autofocus"
   ],
-  "author": "Bjorn Krols",
-  "license": "MIT",
+  "homepage": "https://github.com/byteboomers/vue-autofocus-directive#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byteboomers/vue-autofocus-directive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byteboomers/vue-autofocus-directive/issues"
+  },
+  "main": "dist/vue-autofocus-directive.js",
+  "scripts": {
+    "build": "webpack --mode production --progress"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
@@ -23,8 +30,5 @@
     "babel-loader": "^8.0.6",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.4.4"
   }
 }
