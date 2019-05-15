@@ -1,6 +1,6 @@
 # vue-autofocus-directive
 
-> Autofocus directive for Vue
+Autofocus directive for Vue
 
 ## About
 
@@ -30,11 +30,11 @@ Vue.directive("autofocus", autofocus);
 
 ## Options
 
-### `binding`  
+### `binding`
 
-Type: `value`  
-Default: `undefined`  
-Description: _Required when using dynamic value_  
+- Type: `value`
+- Default: `undefined`
+- Description: _Required when using dynamic value_
 
 ## Example
 
@@ -79,16 +79,3 @@ export default {
 };
 </script>
 ```
-
-## Powered by
-
-- Babel 7
-- Webpack 4
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-## Twitter
-
-[Follow me on Twitter](https://twitter.com/KrolsBjorn)
